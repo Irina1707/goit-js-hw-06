@@ -22,8 +22,8 @@ const ulEl = document.querySelector('.gallery');
 //     `<li><img src = "${image.url}" alt = "${image.alt}" width = "200" height = "150" /></li>`);
 // });
 
-const markup = images.map((image) => `<li><img src = "${image.url}" alt = "${image.alt}" width = "200" height = "150"/></li>`);
+const markup = images.map((image) => `<li><img src = "${image.url}" alt = "${image.alt}" width = "200" height = "150"/></li>`).join("");
 ulEl.insertAdjacentHTML('beforeend', markup);
 
-
+console.log(markup)
 

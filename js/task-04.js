@@ -14,4 +14,5 @@ dekrementBtn.addEventListener('click', event => {
     console.log('Удаляем слушателя события c кнопки');
     valueEl -= 1;
     counterValue.innerHTML = valueEl; 
+    
 });
