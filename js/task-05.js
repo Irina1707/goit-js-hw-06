@@ -6,6 +6,13 @@ let outputEl = document.querySelector('#name-output');
 function onInputChange(event) {
     inputEl = event.currentTarget.value;
     
-    inputEl === " " ? (outputEl.innerText = `${Anonymous}`) : (outputEl.innerText = inputEl);
+    console.log(inputEl);
+    if (inputEl !== " ") { 
+        return outputEl.innerText = inputEl;
+    } else {
+       return outputEl.innerText = "Anonymous";
+    }
+    //inputEl === " " ? (outputEl.innerText = `${Anonymous}`) : (outputEl.innerText = inputEl);
 }
 console.log(outputEl);
+
