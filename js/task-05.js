@@ -7,7 +7,7 @@ function onInputChange(event) {
     inputEl = event.currentTarget.value;
     
     console.log(inputEl);
-    if (inputEl !== " ") { 
+    if (inputEl !== "") { 
         return outputEl.innerText = inputEl;
     } else {
        return outputEl.innerText = "Anonymous";
